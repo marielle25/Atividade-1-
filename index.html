@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind + DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [daisyui],
+      daisyui: {
+        themes: ["light"],
+      },
+    };
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <title>Landing Page - DaisyUI Version 1.0</title>
+</head>
+
+<body class="font-[Inter]">
+
+<!-- NAVBAR -->
+<header class="container mx-auto max-w-7xl py-8">
+  <div class="navbar bg-base-100 px-0">
+    <div class="navbar-start">
+      <img src="assets/img/logo.svg" class="max-w-[150px]" alt="Logo">
+    </div>
+
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal gap-6 text-gray-600">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#professores">Professores</a></li>
+        <li><a href="#alunos">Alunos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+      <a class="btn btn-neutral ml-4">Documentos</a>
+    </div>
+  </div>
+</header>
+
+<main class="container max-w-7xl mx-auto">
+
+  <!-- HERO -->
+  <section class="hero bg-gray-100 py-20 rounded-xl mb-16">
+    <div class="hero-content text-center flex flex-col max-w-3xl">
+      <h1 class="text-5xl font-bold">
+        Depois de muita espera, ela finalmente chegou!
+      </h1>
+
+      <p class="py-6 text-gray-500">
+        O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!
+      </p>
+
+      <div class="flex gap-4 justify-center">
+        <a class="btn bg-sky-700 text-white hover:bg-sky-800">Ser feliz agora</a>
+        <a class="btn btn-outline border-sky-700 text-sky-700 hover:bg-sky-50">Ficar triste</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="mb-16">
+    <div class="flex justify-between items-center gap-12 flex-wrap">
+      <img src="assets/img/Brand Icon-2.svg" class="w-16" />
+      <img src="assets/img/Brand Icon-1.svg" class="w-16" />
+      <img src="assets/img/Brand Icon-6.svg" class="w-16" />
+      <img src="assets/img/Brand Icon-5.svg" class="w-16" />
+      <img src="assets/img/Brand Icon-4.svg" class="w-16" />
+      <img src="assets/img/Brand Icon-3.svg" class="w-16" />
+      <img src="assets/img/Brand Icon.svg" class="w-16" />
+    </div>
+  </section>
+
+  <!-- DESTAQUES (Refatorado com Tabs DaisyUI) -->
+  <section class="mb-20">
+    <div class="tabs tabs-boxed grid grid-cols-3 bg-base-100 border">
+      
+      <a class="tab flex gap-4 text-left">
+        <i class="fa-solid fa-chevron-right pt-1"></i>
+        <div>
+          <strong>Ela é bonita</strong>
+          <p class="text-sm text-gray-500">Além de linda, ela é a mais top de todas.</p>
+        </div>
+      </a>
+
+      <a class="tab flex gap-4 text-left">
+        <i class="fa-solid fa-chevron-right pt-1"></i>
+        <div>
+          <strong>A cor do destaque</strong>
+          <p class="text-sm text-gray-500">O azul royal ficou no passado.</p>
+        </div>
+      </a>
+
+      <a class="tab flex gap-4 text-left">
+        <i class="fa-solid fa-chevron-right pt-1"></i>
+        <div>
+          <strong>Webeti</strong>
+          <p class="text-sm text-gray-500">Nosso mascote é um gênio de informática.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- MOCKUP -->
+  <figure>
+    <img src="assets/img/mockup.png" class="w-full mb-16 rounded-lg">
+  </figure>
+
+  <!-- TÍTULO + TEXTO -->
+  <h2 class="text-center text-5xl font-semibold mb-6">
+    Alunos que já compraram.
+  </h2>
+  <p class="text-center text-gray-500 max-w-xl mx-auto mb-14">
+    Junte-se aos milhares de alunos que já estão vestindo a nossa camiseta linda e maravilhosa.
+  </p>
+
+  <!-- MÉTRICAS (Cards DaisyUI) -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-20">
+
+    <div class="stat shadow rounded-xl">
+      <div class="stat-value text-5xl">234+</div>
+      <div class="stat-desc">Alunos felizes</div>
+    </div>
+
+    <div class="stat shadow rounded-xl">
+      <div class="stat-value text-5xl">38,903+</div>
+      <div class="stat-desc">Alunos adquirindo agora</div>
+    </div>
+
+    <div class="stat shadow rounded-xl">
+      <div class="stat-value text-5xl">154+</div>
+      <div class="stat-desc">Alunos tristes</div>
+    </div>
+
+  </section>
+
+</main>
+
+</body>
+</html>
